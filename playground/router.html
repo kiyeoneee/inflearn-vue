@@ -7,6 +7,10 @@
 </head>
 <body>
     <div id="app">
+        <div>
+            <router-link to="/login">Login</router-link>
+            <router-link to="/main">Main</router-link>
+        </div>
         <!-- Vue 인스턴스의 라우터 인스턴스를 연결해야지만 사용할 수 있는 태그 -->
         <router-view></router-view>
     </div>   
@@ -30,6 +34,7 @@
                 {
                     // 페이지의 url
                     path: '/login',
+                    name: 'login',
                     // 해당 url에서 표시될 컴포넌트
                     component: LoginComponent
                 },
