@@ -28,13 +28,16 @@
         }
 
         var router = new VueRouter({
+            // http://127.0.0.1:5500/playground/router.html#/login
+            // 위와 같이 라우팅 된 페이지 이동 중 히스토리 관리를 위한 #가 붙는데
+            // 이를 없애고 싶은 경우 아래의 history 모드가추가
+            mode: 'history',
             // 페이지의 라우팅 정보
             // 페이지의 갯수만큼 객체가 필요하며 배열로 이루어짐
             routes: [
                 {
                     // 페이지의 url
                     path: '/login',
-                    name: 'login',
                     // 해당 url에서 표시될 컴포넌트
                     component: LoginComponent
                 },
