@@ -26,7 +26,7 @@
         getData: function() { 
           var vm = this;
           axios.get('https://jsonplaceholder.typicode.com/users/')
-            .then(function(response) {
+            .then(function(response) { // download가 성공 할 경우
               console.log(response.data);
               vm.users = response.data;
             })
